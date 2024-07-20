@@ -1,16 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
-    margin: 0;
+    margin: 0,5%;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: #1F1517 !important; 
-    
+    background: #1F1517;
+    color: #FFFF;
 }
 
-.navbar-brand {
+html {
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1,5rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: 'teko' sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -21,12 +54,14 @@ body {
     color: #FFF2E780;
 }
 
+.github {
+    color: #FFF2E7;
+    font-weight: 600;
+}
 
 main {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
-    
 }
 
 .principal {
@@ -58,7 +93,6 @@ main {
 }
 
 .destaque {
-    margin: 1rem;
     font-family: ;
     font-size: 1rem;
     font-weight: 500;
@@ -89,18 +123,15 @@ hr {
 }
 
 .hero-imagens-container {
-    
+    max-width: 45%;
     column-count: 4;
-    gap: 0.5rem;
+    gap: 1rem;
     
 }
 
 .hero-imagens-container > figure > img {
     
     border-radius: 0,5rem;
-    
-
-
 
 
 }
@@ -162,7 +193,7 @@ button {
     padding: 2rem;
     border-radius: 0,5rem;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 2rem;
     flex-basis: 29rem;
     margin-top: 2rem;
@@ -238,7 +269,7 @@ footer {
 }
 
 .footer-autor {
-    color: #A45A49;
+    color: rgba(255, 242, 231, 0,50);
     font-size: 1rem;
     font-weight: 500;
     font-family: Inter;
